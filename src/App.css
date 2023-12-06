@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #343A40;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  height: 35%;
+  margin: auto 13%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  display: flex;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo img {
+  width: 27%;
+  height: 27%;
+  cursor: pointer;
+  border-radius: 50%;
 }
+
+.items {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  width: 13%;
+  transition: 2ms;
+}
+
+.items .login {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  cursor: pointer;
+}
+
+.items .login:hover {
+  transition: 2ms;
+  opacity: 0.8;
+}
+
+.items .search {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  cursor: pointer;
+}
+
+.items .search:hover {
+  transition: 2ms;
+  opacity: 0.8;
+}
+
