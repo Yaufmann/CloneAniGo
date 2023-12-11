@@ -9,11 +9,7 @@ const accordArr = createSlice({
      initialState,
      reducers: {
         addUser(state,action) {
-           state.arr.push({
-               id: Date.now(),
-               name: action.payload.name,
-               email: action.payload.email,
-           })
+
         },
         removeUser(state, action) {
             state.arr = state.arr.filter(user => user.id !== action.payload.id)

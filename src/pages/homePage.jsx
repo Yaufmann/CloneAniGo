@@ -1,7 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../App.css'
+import Card from "../component/Card/Card";
+import {arrayImage} from "../utils/ArrayImage";
+import Accordion from "../component/UI/Accordion";
+
+
+
 
 const HomePage = () => {
+    const [card,setCard] = useState(arrayImage);
     return (
         <div className="container-page">
          <div className="background-gray">
@@ -28,7 +35,17 @@ const HomePage = () => {
          </div>
          <div className="background-gray">
              <div className="slider-container">
-                 <p>Аниме осеннего сезона</p>
+                 <p><span>Аниме осеннего сезона</span></p>
+                 <div className="card-container">
+                 {card.map(obj =>
+                     <Card key={obj.id} obj={obj}/>
+                 )}
+                 </div>
+             </div>
+         </div>
+         <div className="background-white">
+             <div className="accordion-container">
+                <Accordion/>
              </div>
          </div>
         </div>

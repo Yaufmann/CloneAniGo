@@ -9,13 +9,13 @@ const AppRouter = () => {
         <Routes>
           <Route
               exact={true}
-              path={LIST_PAGE_ROUTER}
-              element={<AniListPage/>}
+              path={HOME_ROUTER}
+              element={<HomePage/>}
           />
           <Route
               exact={true}
-              path={HOME_ROUTER}
-              element={<HomePage/>}
+              path={LIST_PAGE_ROUTER}
+              element={<AniListPage/>}
           />
         </Routes>
     );
