@@ -13,11 +13,11 @@ const Accordion = () => {
 
     const arr = [classes.accordionToggle]
 
+    if (toggle) {
+        arr.push(classes.animated)
+    }
     const toggleState = () => {
         setToggle(!toggle)
-        if (toggle) {
-            arr.push(classes.animated)
-        }
     }
 
     return (
@@ -26,8 +26,11 @@ const Accordion = () => {
                className={classes.accordionVisible}
                onClick={toggleState}
            >
-               <span>Lorem Lorem Lorem Lorem Lorem</span>
-               <img src={Chevron} alt=""/>
+               <span>Lorem </span>
+               <img
+                   className={toggle && classes.active}
+                   src={Chevron} alt=""
+               />
            </button>
             <div
                 className={arr.join(' ')}
