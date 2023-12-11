@@ -1,0 +1,13 @@
+.customInput {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border: 1px solid #343A40;
+}
+
+.customInput:focus {
+    font-size: 12px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    outline: none;
+    border: 1px solid #343A40;
+}
