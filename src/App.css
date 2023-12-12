@@ -76,11 +76,11 @@ html {
 
 .background-gray {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .background-white {
-  background: #FFFFFF;
+  background: #e9ebee;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
@@ -165,4 +165,11 @@ html {
   margin: auto 15%;
   padding: 16px 0;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.containerLibrori {
+  margin: auto 15%;
+  padding: 16px 0;
 }

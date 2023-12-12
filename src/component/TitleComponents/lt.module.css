@@ -1,0 +1,86 @@
+.container {
+    width: 415px;
+    max-width: 415px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.containerTitle {
+    font-family: 'Rethink Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 15px 15px;
+    background: #FFFFFF;
+}
+
+.containerTitle div:nth-child(1) {
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.containerTitle div:nth-child(2) {
+    font-family: 'Rethink Sans', sans-serif;
+    opacity: 0.9;
+    font-size: 16px;
+    color: #ff5c57;
+}
+
+.containerTitle div:nth-child(2):hover {
+    opacity: 1;
+    border-bottom: 1px solid #ff5c57;
+}
+
+.card {
+    padding: 12px 20px;
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    background: #FFFFFF;
+}
+
+.card img {
+    margin-right: 14px;
+    width: 60px;
+    height: 84px;
+}
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardText span {
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 16px;
+    color: #ff5c57;
+    margin-bottom: 7px;
+    opacity: 0.9;
+}
+
+.cardText span:hover {
+    font-weight: 600;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.cardText div:nth-child(2) {
+    font-family: 'Rethink Sans', sans-serif;
+    opacity: 0.7;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.cardText div:nth-child(3) {
+    font-family: 'Rethink Sans', sans-serif;
+    opacity: 0.7;
+    font-size: 13px;
+    margin-bottom: 2px;
+}

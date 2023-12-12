@@ -3,6 +3,8 @@ import '../App.css'
 import Card from "../component/Card/Card";
 import {arrayImage} from "../utils/ArrayImage";
 import Accordion from "../component/UI/Accordion";
+import ListTitle from "../component/TitleComponents/ListTitle";
+import SecondTitle from "../component/SecondTitleComponents/SecondTitle";
 
 
 
@@ -45,8 +47,15 @@ const HomePage = () => {
          </div>
          <div className="background-white">
              <div className="accordion-container">
-                <Accordion/>
+                <Accordion text='Обновления аниме'/>
+                <Accordion text='Расписание аниме'/>
+                <ListTitle />
              </div>
+         </div>
+         <div className="background-white">
+            <div className="containerLibrori">
+                <SecondTitle/>
+            </div>
          </div>
         </div>
     );
