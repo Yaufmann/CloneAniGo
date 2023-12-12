@@ -165,7 +165,7 @@ html {
   margin: auto 15%;
   padding: 16px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
