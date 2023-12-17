@@ -6,7 +6,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
 import InputCustom from "./inputCustom";
 import {NavLink, useNavigate} from "react-router-dom";
-import {HOME_ROUTER, LIST_PAGE_ROUTER} from "../utils/constant";
+import {AUTH_ROUTER, HOME_ROUTER, LIST_PAGE_ROUTER} from "../utils/constant";
 
 
 
@@ -44,7 +44,10 @@ const NavBar = () => {
                 />
             </FormControl>
             :
-            <div className="login">Войти</div>
+            <div
+                className="login"
+                onClick={()=>navigate(AUTH_ROUTER)}
+            >Войти</div>
             }
              {open
              ?

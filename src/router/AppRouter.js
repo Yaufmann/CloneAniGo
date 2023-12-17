@@ -1,8 +1,9 @@
 import React from 'react';
 import {Route, Routes} from "react-router-dom";
 import HomePage from "../pages/homePage";
-import {HOME_ROUTER, LIST_PAGE_ROUTER} from "../utils/constant";
+import {AUTH_ROUTER, HOME_ROUTER, LIST_PAGE_ROUTER} from "../utils/constant";
 import AniListPage from "../pages/AniListPage";
+import Authpage from "../pages/Authpage";
 
 const AppRouter = () => {
     return (
@@ -16,6 +17,11 @@ const AppRouter = () => {
               exact={true}
               path={LIST_PAGE_ROUTER}
               element={<AniListPage/>}
+          />
+          <Route
+              exact={true}
+              path={AUTH_ROUTER}
+              element={<Authpage/>}
           />
         </Routes>
     );

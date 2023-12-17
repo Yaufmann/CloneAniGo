@@ -179,3 +179,12 @@ html {
   display: flex;
   justify-content: center;
 }
+/*AuthPage*/
+
+.containerAuth {
+  margin: auto 15%;
+  padding-top: 90px;
+  padding-bottom: 388px;
+  display: flex;
+  justify-content: center;
+}
