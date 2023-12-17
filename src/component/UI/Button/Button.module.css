@@ -1,0 +1,20 @@
+.button {
+   font-family: 'Rethink Sans', sans-serif;
+   margin-top: 12px;
+   font-size: 16px;
+   color: #FFFFFF;
+   background: #ff5c57;
+   padding: 8px 12px;
+   border: 1px solid #ff5c57;
+   border-radius: 2px;
+   cursor: pointer;
+   opacity: 0.9;
+}
+
+.button:hover {
+    background: #ec342d;
+}
+
+.button:active {
+    background: #ee251c;
+}

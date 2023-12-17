@@ -1,0 +1,28 @@
+.container {
+    background: #343A40;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    color: #999999;
+    margin: auto 15%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer div {
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 16px;
+    padding: 8px 16px;
+}
+
+.text {
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 16px;
+    padding: 8px 0;
+}

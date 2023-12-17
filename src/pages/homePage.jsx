@@ -5,6 +5,10 @@ import {arrayImage} from "../utils/ArrayImage";
 import Accordion from "../component/UI/Accordion";
 import ListTitle from "../component/TitleComponents/ListTitle";
 import SecondTitle from "../component/SecondTitleComponents/SecondTitle";
+import Button from "../component/UI/Button/Button";
+import {Abc} from "@mui/icons-material";
+import About from "../component/About";
+import Footer from "../component/Footer";
 
 
 
@@ -55,8 +59,15 @@ const HomePage = () => {
          <div className="background-white">
             <div className="containerLibrori">
                 <SecondTitle/>
+                <div className="libroryButton">
+                    <Button>Весь список аниме</Button>
+                </div>
             </div>
          </div>
+         <div className="background-white">
+             <About/>
+         </div>
+         <Footer/>
         </div>
     );
 };

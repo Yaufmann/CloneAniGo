@@ -173,3 +173,9 @@ html {
   margin: auto 15%;
   padding: 16px 0;
 }
+
+.libroryButton {
+  width: 730px;
+  display: flex;
+  justify-content: center;
+}

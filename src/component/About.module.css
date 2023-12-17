@@ -1,0 +1,72 @@
+.container {
+    margin: auto 15%;
+    padding-top: 16px;
+    padding-bottom: 150px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+h2 {
+    font-family: 'Rethink Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    opacity: 0.9;
+    color: #212529;
+}
+
+.title {
+    font-family: 'Rethink Sans', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    color: #212529;
+}
+
+.secondTitle {
+    font-family: 'Rethink Sans', sans-serif;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    color: #212529;
+}
+
+.thirdTitle {
+    font-family: 'Rethink Sans', sans-serif;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    color: #212529;
+    text-align: justify;
+}
+
+.secondTitle span {
+    font-weight: 600;
+}
+
+
+ul {
+    padding-left: 38px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul li {
+    font-family: 'Rethink Sans', sans-serif;
+    color: #212529;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: justify;
+}
+
+ul li span {
+    color: #ff5c57;
+}
+
+ul li span:hover {
+    cursor: pointer;
+    color: #ec302b;
+}
