@@ -1,17 +1,17 @@
 import React from 'react';
 import '../App.css';
-import Modal from "../component/UI/Modal/modal";
+import LoginModal from "../component/UI/Modal/LoginModal";
 import Footer from "../component/Footer";
 
-const Authpage = () => {
+const LoginPage = () => {
     return (
         <div className="background-white">
             <div className="containerAuth">
-                <Modal/>
+                <LoginModal/>
             </div>
             <Footer/>
         </div>
     );
 };
 
-export default Authpage;
+export default LoginPage;

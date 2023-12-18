@@ -1,9 +1,10 @@
 import React from 'react';
 import {Route, Routes} from "react-router-dom";
 import HomePage from "../pages/homePage";
-import {AUTH_ROUTER, HOME_ROUTER, LIST_PAGE_ROUTER} from "../utils/constant";
+import {AUTH_ROUTER, HOME_ROUTER, LIST_PAGE_ROUTER, REGISTER_ROUTER} from "../utils/constant";
 import AniListPage from "../pages/AniListPage";
-import Authpage from "../pages/Authpage";
+import LoginPage from "../pages/LoginPage";
+import RegisterPage from "../pages/RegisterPage";
 
 const AppRouter = () => {
     return (
@@ -21,7 +22,12 @@ const AppRouter = () => {
           <Route
               exact={true}
               path={AUTH_ROUTER}
-              element={<Authpage/>}
+              element={<LoginPage/>}
+          />
+          <Route
+              exact={true}
+              path={REGISTER_ROUTER}
+              element={<RegisterPage/>}
           />
         </Routes>
     );

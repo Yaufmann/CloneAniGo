@@ -3,6 +3,6 @@ import userSlice from './firstSlice'
 
 export default configureStore({
      reducer: {
-          cards: userSlice,
+          user: userSlice,
      }
 })

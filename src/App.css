@@ -5,12 +5,14 @@
 }
 
 html {
-  background: rgba(0, 0, 0, 0.04);;
+  background: rgba(0, 0, 0, 0.04);
 }
 
 .navbar {
   position: fixed;
+  border-bottom: 3px solid #ff5c57;
   width: 100%;
+  min-height: 51px;
   background-color: #343A40;
   z-index: 1000;
 }
@@ -23,9 +25,27 @@ html {
   align-items: center;
 }
 
+.leftNavbarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo {
   display: flex;
   padding: 5px;
+  align-items: center;
+}
+
+.logoText {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.logoText:hover {
+  transition: 2ms;
+  opacity: 0.8;
 }
 
 .logo img {
@@ -71,7 +91,7 @@ html {
 /*main page*/
 .container-page {
   width: 100%;
-  padding-top: 51px;
+  padding-top: 54px;
 }
 
 .background-gray {
@@ -188,3 +208,28 @@ html {
   display: flex;
   justify-content: center;
 }
+/*ListPage*/
+
+.listContainer {
+  margin: auto 15%;
+  padding-top: 90px;
+}
+
+.listContentContainer {
+  padding: 16px;
+  border: 1px solid rgba(0,0,0,.125);
+  background: #FFFFFF;
+  max-width: 975px;
+  width: 975px;
+}
+
+.listTextContent {
+  font-family: 'Rethink Sans', sans-serif;
+  font-size: 40px;
+  color: #212529;
+  font-weight: 600;
+  opacity: 0.9;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+

@@ -1,20 +1,30 @@
 import {createSlice} from '@reduxjs/toolkit'
 
 const initialState = {
-    arr: [],
+    isAuth: false,
+    email: null,
+    token: null,
+    id: null
 }
 
-const accordArr = createSlice({
-     name: "accord",
+const userSlice = createSlice({
+     name: "user",
      initialState,
      reducers: {
-        addUser(state,action) {
-
+        Auth(state) {
+            state.isAuth = !state.isAuth
         },
-        removeUser(state, action) {
-            state.arr = state.arr.filter(user => user.id !== action.payload.id)
-        }
+        addUser(state,action) {
+            state.email = action.payload.email;
+            state.token = action.payload.token;
+            state.id = action.payload.id;
+        },
+        removeUser(state) {
+            state.email = null;
+            state.token = null;
+            state.id = null;
+        },
      },
 });
-export const {addUser,removeUser} = accordArr.actions;
-export default accordArr.reducer
+export const {addUser,removeUser,Auth} = userSlice.actions;
+export default userSlice.reducer
